@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <!-- Title -->
+    <title>Encrpyt and Decrypt Data</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <label for="input">Input</label>
+        <input
+          id="input"
+          type="text"
+          id="input"
+          placeholder="Input data to encrypt"
+        />
+        <button id="encrypt" onclick="toBase64(input.value)">Encrpyt</button>
+        <label>Decrypt</label>
+        <div class="input-group">
+          <input id="output" type="text" placeholder="Input data to decrypt" />
+          <span id="security"></span>
+        </div>
+        <button id="decrypt" onclick="fromBase64(output.value)">Decrpyt</button>
+      </div>
+    </div>
+  </body>
+</html>
